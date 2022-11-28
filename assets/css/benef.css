@@ -1,0 +1,195 @@
+/* beneficios */
+#bg-benef{
+  background-color: #000000;
+  background-image: url("../img/benef/bl1/bg.jpg");
+  background-repeat: no-repeat !important;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* BLOCO 1 */
+.bg_bloco-1 {  
+  background-position: top left;
+  background-repeat: repeat-x;
+}
+
+
+.ligado {
+  opacity: 1.0;
+}
+
+/* - - - - - - - - - - - club */
+.box-club-top{
+  width: 100%;
+  max-width: 413px;
+  height: 100vh;
+  max-height: 135px;
+  background-color: #ac0579; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #ac0579 , #f30415);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.box-club-middle {
+  width:100%; 
+  max-width: 413px; 
+  min-height: 610px;
+  padding:   0;
+  background-color: #ac0579; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom, #f30472, #9a084f,   #a00846,  #d60639 );
+  opacity: 0.8;
+  }
+
+.box-club-bottom {
+  width: 100%;
+  max-width: 413px;
+  height: 80px;
+  position: relative;
+}  
+
+.box-club-bottom .box-color-bottom {
+  width: 100%;
+  max-width: 413px;
+  height: 40px;
+  background-color: #ac0579; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom, #d60639 , #f30472);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 80;  
+  opacity: 0.8;
+
+}
+
+/* - - - - - - - - - - - meu */
+.box-meu-top{
+  width: 100%;
+  max-width: 413px;
+  height: 100vh;
+  max-height: 135px;
+  background-color: #ac0579;
+  opacity: 0.8;
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(45deg, #4d0618 0, #230228 1px, #2e022f 0, #2e022f 50%);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.box-meu-middle {
+  width:100%; 
+  max-width: 413px; 
+  min-height: 610px;
+  padding:   0;
+  background-color: #ac0579;
+  opacity: 0.8;
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(45deg, #4d0618 0, #67233b 1px, #67233b 0, #2e022f 50%);
+  background-repeat: repeat;
+  border-bottom:  1px solid #4d0618;
+  }
+
+.box-meu-bottom {
+  width: 100%;
+  max-width: 413px;
+  height: 80px;
+  position: relative;
+
+}  
+
+.box-meu-bottom .box-color-bottom2 {
+  width: 100%;
+  max-width: 413px;
+  height: 40px;
+  opacity: 0.8;
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(45deg, #4d0618 0, #67233b 1px, #67233b 0, #2e022f 50%);
+  /*background-image: repeating-linear-gradient(45deg, #4d0618 0, #230228 1px, #2e022f 0, #2e022f 50%);*/
+  background-repeat: repeat;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 80;  opacity: 0.8;
+}
+
+.l-txt90 {
+ margin-top:  -10px;
+ margin-left: 0;
+ height: 1px;
+ width:90%;
+ border-width:0;
+ color:#fff;
+ background-color:#fff;
+}
+
+.l-txt70 {
+ margin-top:  -10px;
+ height: 1px;
+ width:70%;
+ border-width:0;
+ color:#fff;
+ background-color:#fff;
+}
+
+.l-txt70l {
+ margin-top:  -10px;
+ margin-left: 0;
+ height: 1px;
+ width:70%;
+ border-width:0;
+ color:#fff;
+ background-color:#fff;
+}
+
+.l-txt70r {
+ margin-top:  -10px;
+ margin-right: 0;
+ height: 1px;
+ width:70%;
+ border-width:0;
+ color:#fff;
+ background-color:#fff;
+}
+
+.l-txt40r {
+ margin-top:  -10px;
+ margin-right: 0;
+ height: 1px;
+ width:40%;
+ border-width:0;
+ color:#fff;
+ background-color:#fff;
+}
+.l-txt50r {
+ margin-top:  -10px;
+ margin-right: 0;
+ height: 1px;
+ width:50%;
+ border-width:0;
+ color:#fff;
+ background-color:#fff;
+}
+
+.l-txt80r {
+ margin-top:  -10px;
+ margin-right: 0;
+ height: 1px;
+ width:80%;
+ border-width:0;
+ color:#fff;
+ background-color:#fff;
+}
+
+a.txt_cor_vinho:hover,
+.txt_cor_vinho {
+  color: #d5151f;
+}
+
+/* ---------------------- menu ---------------------- */
+
+#myNavbar {
+  background: #000000 !important;
+}

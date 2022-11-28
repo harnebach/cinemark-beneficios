@@ -1,0 +1,446 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
+}
+
+body {
+  background-color: #0a0a0a;
+}
+
+
+.bg_logo {
+  background-image: url('../img/logos/logo_cinemark.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 140px;
+  height: 28px
+}
+
+
+/* ajuste do carrossel para deixar as imagens laterais um pouco menor */
+.owl-item.active img,
+.owl-item img {
+  width: 70%!important;
+}
+
+.owl-item.active.center img {
+    width: 100%!important;
+}
+
+/* MENU - myNavbar */
+#myNavbar {
+  background: url(../img/meu_cnk/menu/bg.jpg) repeat-x top center ;
+}
+
+.desk {
+  display: block;
+}
+.mob {
+  display: none;
+}
+
+/* BLOCO 1 */
+.bg_bloco-1 {
+  
+  background-image: url("../img/meu_cnk/bl1/bg.jpg");
+  background-position: top left;
+  background-repeat: repeat-x;
+}
+
+.btnEuQuero:hover {
+opacity: 0.9;
+}
+
+.btnEuQuero {
+  position: absolute; top: 50%; left:  50%; transform: translate(-50%, -10%)
+}
+
+.p-esq {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.p-dir {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#bloco1 .owl-item.active img,
+#bloco1 .owl-item img {
+  padding-top: 7%!important;
+  opacity: 0.5;
+}
+
+#bloco1 .owl-item.active.center img {
+  padding-top: 0!important;
+  opacity: 1.0;
+}
+
+@media (max-width: 767px){
+  .btnEuQuero {
+    transform: translate(-50%, 5%) ;
+  }
+  .p-esq, .p-dir {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/* BLOCO 2 */
+.bg_bloco-2 {
+  background-color: #0a0a0a;  
+  }
+
+.owl-prev, .owl-next {
+  width: 62px;
+  height: 82px;
+  background: url("../img/meu_cnk/bl2/seta.png") no-repeat center center !important;
+  position: absolute;   
+  top:  30%;
+  outline: none;
+  }
+
+  .owl-prev:hover, .owl-next:hover,
+  .owl-prev:focus, .owl-next:focus{
+  outline: none;
+}
+
+.owl-prev {
+  left: 3%;
+  }
+
+.owl-next {   
+  right: 3%;
+  transform: rotateY(180deg);
+  }
+
+/* hover para mudar de cor */
+.owl-prev:hover::before, .owl-next:hover::before{
+   background: rgba(0, 0, 0, 0.4);
+  }
+
+.owl-carousel .owl-item img{
+  margin: auto;
+}
+
+#bloco2 .owl-item.active img,
+#bloco2 .owl-item img {
+  padding-top: 20%!important;
+  opacity: 0.5;
+}
+
+#bloco2 .owl-item.active.center img {
+  border: 2px solid #333 ;
+  padding-top: 0!important;
+  opacity: 1.0;
+}
+
+
+
+/* BLOCO 3 */
+.bg_bloco-3 {
+  background-color: #701016;
+  background-image: url("../img/meu_cnk/bl3/bg.jpg");
+  background-position: top left;
+  background-repeat: repeat-y;  
+  }
+
+/* BLOCO 4 */
+.bg_bloco-4 {
+  background-color: #58347e;
+  background-image: url("../img/meu_cnk/bl4/bg.jpg");
+  background-position: top left;
+  background-repeat: repeat-x;
+  }
+
+
+/* BLOCO 5 */
+.bg_bloco-5 {
+  background-color: #000000;
+  background-image: url("../img/meu_cnk/bl5/bg.jpg");
+  background-position: top left;
+  background-repeat: repeat-x;
+}
+
+ul.lista-bl5, ul.social-bl5 {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.social-bl5 li {
+  display: inline-block;
+  margin: 0 20px 20px 0;
+
+}
+
+/*BLOCO 6*/
+.bg_bloco-6 {
+  background-color: #000000 ;
+}
+
+#accordion {
+  width: 100%;  
+}
+
+.card {
+  background: #000000 ;
+  font-size: 20px;
+}
+
+.card {
+  width: 100%;
+}
+
+.card-header {
+  width: 100% !important;
+  border-bottom: 2px solid #ffffff;
+}
+.card-header a {
+  color: #ffffff;  
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  }
+
+ .card-header a::after {
+    content:  "-";
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bolder;
+    position: absolute;
+    right: 3%;  
+  }
+
+.card-header a.collapsed::after {
+    content:  "+";
+}
+
+
+
+/* BLOCO 7 */
+.bg_bloco-7 {
+  background-color: #FFFFFF ;
+  color: #000000;
+}
+
+/* ---------------------- menu ---------------------- */
+
+.nav-masthead .nav-link {
+  padding: .188rem 0;
+  color: rgba(255, 255, 255, 1);
+  background-color: transparent;
+  border-bottom: .188rem solid transparent;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 1)!important;
+  font-weight: bolder;
+
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(0, 0, 0, 0.5)
+}
+
+.nav-masthead .active, .active {
+  color: #fff;
+  font-family: 'Montserrat', Arial, Tahoma;
+  /*border-bottom-color: #d81b28*/
+}
+
+
+section .row .position-absolute {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+
+/* FOOTER */
+footer p {
+  font-size: 24px
+}
+
+footer label {
+  font-size: 14px
+}
+
+footer div.redes_sociais ul,
+footer div.logos_rodape ul {
+  list-style: none
+}
+
+footer div.redes_sociais ul li,
+footer div.logos_rodape ul li {
+  display: inline-block
+}
+
+footer div.redes_sociais ul li a {
+  display: inline-block;
+  width: 20px;
+  height: 20px
+}
+
+footer div.redes_sociais p a.link_site {
+  display: inline;
+  color: #ffffff !important;
+}
+
+footer div.logos_rodape ul li.divisoria {
+  vertical-align: middle
+}
+
+footer .linha-vertical {
+  border-left: 1px solid #ffffff;
+  vertical-align: middle
+}
+
+
+
+@media (max-width: 991px){
+  .img-fluid{
+    float: none;
+    margin: 0 auto !important;
+
+  }
+  
+  .img-responsive {
+    max-width: 99%;
+  }
+
+  #logos_par {
+    marign: 0 auto !important;
+  }
+  .m-50px-l{
+    margin-right: none;
+  }
+  .img-resize {
+    width: 99%;
+  }
+}
+
+@media (max-width: 767px){
+  footer .linha-vertical {
+    border-left: none;
+  }  
+ .bottom_absolute {
+  
+  margin-left:0 !important;
+  }
+.borda-a91737 {
+  border-right: none;
+  }
+  .img-resize{
+    width: 90%;
+  }
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.8);
+    }
+
+
+.desk {
+  display: none;
+}
+.mob {
+  display: block;
+}
+
+}
+
+
+
+/*-------------------------------
+animate geral
+--------------------------------*/
+
+
+.backInUp {
+  -webkit-animation: backInUp 1.5s;
+  animation: backInUp 1.5s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+.zoomIn {animation: zoomIn 2s 1 alternate;}
+.zoomIn2 {animation: zoomIn 4s 1 alternate;}
+
+.zoomOut {animation: zoomOut 2s 1 alternate;}
+
+
+ .pulse1 { animation: backInUp 1s 1 alternate;}
+
+ .fadeIn {   animation: fadeIn 2s ease-in-out; }
+
+
+#myBtn {
+  display: none;
+}
+
+
+.navbar-toggler-icon{  
+  opacity: .5;
+  background: #be131c;
+  outline: none;
+}
+
+.navbar-toggler::before {
+  content: "Menu";
+  color: #ffffff;
+  font-size: 10px;
+}
+/*-------------------------------
+goto top up width 1000px 
+--------------------------------*/
+
+@media (min-width: 1200px){
+
+  /* btn top */
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 15px ;
+    border-radius: 50px;
+    opacity: 0.5;
+  }
+  #myBtn:hover {    
+    opacity: 1;
+
+  }
+
+}
+
+@media (max-width: 767px){
+  .bg_bloco-1, .bg_bloco-2, .bg_bloco-3, .bg_bloco-4, .bg_bloco-5 {
+    background-size: cover;
+  }
+}
+

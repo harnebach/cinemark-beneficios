@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+body {
+  background-color: #0a0a0a !important;
+}
+
+
+.bg_logo {
+  background-image: url('../img/logos/logo_cinemark.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 140px;
+  height: 28px
+}
+
+
+/* ajuste do carrossel para deixar as imagens laterais um pouco menor */
+.owl-item.active img,
+.owl-item img {
+  width: 70%!important;
+}
+
+.owl-item.active.center img {
+    width: 100%!important;
+}
+
+/* MENU - myNavbar */
+#myNavbar {
+  background: url(../img/cnk_club/menu/bg.jpg) repeat-x top center ;
+}
+
+.desk {
+  display: block;
+}
+.mob {
+  display: none;
+}
+
+/* BLOCO 1 */
+.bg_bloco-1 {
+  
+  background-image: url("../img/cnk_club/bl1/bg.jpg");
+  background-repeat: repeat-x;
+  background-position: center center;
+  background-size: cover;
+}
+
+.btnEuQuero:hover {
+opacity: 0.9;
+}
+
+.btnEuQuero {
+  position: absolute; top: 50%; left:  50%; transform: translate(-50%, -10%)
+}
+
+.p-esq {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.p-dir {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#bloco1 .owl-item.active img,
+#bloco1 .owl-item img {
+  padding-top: 7%!important;
+  opacity: 0.5;
+}
+
+#bloco1 .owl-item.active.center img {
+  padding-top: 0!important;
+  opacity: 1.0;
+}
+
+@media (max-width: 767px){
+  .btnEuQuero {
+    transform: translate(-50%, 5%) ;
+  }
+  .p-esq, .p-dir {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/* BLOCO 2 */
+.bg_bloco-2 {
+  background-color: #0a0a0a;  
+  }
+
+.owl-prev, .owl-next {
+  width: 62px;
+  height: 82px;
+  background: url("../img/cnk_club/bl2/seta.png") no-repeat center center !important;
+  position: absolute;   
+  top:  30%;
+  outline: none;
+  }
+
+  .owl-prev:hover, .owl-next:hover,
+  .owl-prev:focus, .owl-next:focus{
+  outline: none;
+}
+
+.owl-prev {
+  left: 3%;
+  }
+
+.owl-next {   
+  right: 3%;
+  transform: rotateY(180deg);
+  }
+
+/* hover para mudar de cor */
+.owl-prev:hover::before, .owl-next:hover::before{
+   background: rgba(0, 0, 0, 0.4);
+  }
+
+.owl-carousel .owl-item img{
+  margin: auto;
+}
+
+#bloco2 .owl-item.active img,
+#bloco2 .owl-item img {
+  padding-top: 20%!important;
+  opacity: 0.5;
+}
+
+#bloco2 .owl-item.active.center img {
+  border: 2px solid #333 ;
+  padding-top: 0!important;
+  opacity: 1.0;
+}
+
+
+/* BLOCO 3 */
+
+.bg_bloco-3 {
+  background-color: #58347e;
+  background-image: url("../img/cnk_club/bl3/bg.jpg");
+  background-repeat: repeat-x;
+  background-position: center center;
+  background-size: cover;
+  }
+
+.txt_mensal {
+  background: url("../img/cnk_club/bl3/bg_box_mensal.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 457px;
+  min-height: 202px;
+}
+
+/* BLOCO 4 */
+.bg_bloco-4 {
+  background-color: #701016;
+  background-image: url("../img/cnk_club/bl4/bg.jpg");
+  background-repeat: repeat-x;
+  background-position: center center;
+  background-size: cover;
+
+  }
+
+
+/* BLOCO 5 */
+.bg_bloco-5 {
+  background-color: #000000;
+  background-image: url("../img/cnk_club/bl5/bg.jpg");
+  background-repeat: repeat-x;
+  background-position: center center;
+  background-size: cover;
+  }
+
+ul.lista-bl5, ul.social-bl5 {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.social-bl5 li {
+  display: inline-block;
+  margin: 0 20px 20px 0;
+
+}
+
+/*BLOCO 6*/
+.bg_bloco-6 {
+  background-color: #000000 ;
+}
+
+#accordion {
+  width: 100%;  
+}
+
+.card {
+  background: #000000 ;
+  font-size: 20px;
+}
+
+.card {
+  width: 100%;
+}
+
+.card-header {
+  width: 100% !important;
+  border-bottom: 2px solid #ffffff;
+}
+.card-header a {
+  color: #ffffff;  
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  }
+
+  .card-header a::after {
+    content:  "-";
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bolder;
+    position: absolute;
+    right: 3%;  
+  }
+
+.card-header a.collapsed::after {
+    content:  "+";
+}
+
+
+
+/* BLOCO 7 */
+.bg_bloco-7 {
+  background-color: #FFFFFF ;
+  color: #000000;
+}
+
+
+
+
+/* FOOTER */
+footer p {
+  font-size: 24px
+}
+
+footer label {
+  font-size: 14px
+}
+
+footer div.redes_sociais ul,
+footer div.logos_rodape ul {
+  list-style: none
+}
+
+footer div.redes_sociais ul li,
+footer div.logos_rodape ul li {
+  display: inline-block
+}
+
+footer div.redes_sociais ul li a {
+  display: inline-block;
+  width: 20px;
+  height: 20px
+}
+
+footer div.redes_sociais p a.link_site {
+  display: inline;
+  color: #ffffff !important;
+}
+
+footer div.logos_rodape ul li.divisoria {
+  vertical-align: middle
+}
+
+footer .linha-vertical {
+  border-left: 1px solid #ffffff;
+  vertical-align: middle
+}
+
+
+
+@media (max-width: 991px){
+  .img-fluid{
+    float: none;
+    margin: 0 auto !important;
+
+  }
+  
+  .img-responsive {
+    max-width: 99%;
+  }
+
+  #logos_par {
+    marign: 0 auto !important;
+  }
+  .m-50px-l{
+    margin-right: none;
+  }
+  .img-resize {
+    width: 99%;
+  }
+}
+
+@media (max-width: 767px){
+  .desk {
+  display: none;
+  }
+  .mob {
+    display: block;
+  }
+}
